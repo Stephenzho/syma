@@ -33,6 +33,12 @@ App({
       }
     })
   },
+
+  onHide: function (){
+    console.log("进入后台");
+    
+
+  },
   globalData: {
     userInfo: null
   }
