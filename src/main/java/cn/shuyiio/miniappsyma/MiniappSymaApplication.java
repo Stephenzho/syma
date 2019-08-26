@@ -2,8 +2,10 @@ package cn.shuyiio.miniappsyma;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 @SpringBootApplication
+@EnableConfigurationProperties
 public class MiniappSymaApplication {
 
 	public static void main(String[] args) {

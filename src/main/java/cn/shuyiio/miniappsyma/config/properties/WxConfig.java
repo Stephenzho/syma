@@ -1,11 +1,12 @@
-package cn.shuyiio.miniappsyma.config;
+package cn.shuyiio.miniappsyma.config.properties;
 
 import lombok.Data;
 import lombok.Getter;
-import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
 
-@Configurable
+
+@Configuration
 @ConfigurationProperties(prefix = "wx")
 @Data
 @Getter

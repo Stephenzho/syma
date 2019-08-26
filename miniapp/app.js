@@ -10,8 +10,17 @@ App({
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
-
         console.log(res.code);
+        wx.request({
+          url: 'http://192.168.199.204:8080/user/id?code='+res.code,
+          method: 'GET',
+          dataType: 'json',
+          success: res =>{
+            console.log(res);
+          }
+        })
+
+
       }
     })
     // 获取用户信息
